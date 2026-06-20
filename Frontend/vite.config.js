@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server:{
     proxy:{
-      "/api" :"ai-interview-question-practise.vercel.app"
+      "/api" :"https://ai-interviewquestionpra.onrender.com"
     }
   }
 })
