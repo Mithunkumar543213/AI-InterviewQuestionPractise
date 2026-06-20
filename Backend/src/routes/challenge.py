@@ -168,7 +168,7 @@ async def clear_quota(request: Request, db: Session = Depends(get_db)):
         user_id = user_details.get("user_id")
 
            res = (
-           db.query(ChallengeQuota)
+            db.query(ChallengeQuota)
            .filter(ChallengeQuota.created_by == user_id)
            .delete()
         )
