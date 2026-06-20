@@ -1,0 +1,8 @@
+"clerk-backend-api>=3.0.0",
+    "fastapi>=0.125.0",
+    "google-generativeai>=0.8.6",
+    "openai>=2.43.0",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "sqlalchemy>=2.0.51",
+    "uvicorn>=0.49.0",
