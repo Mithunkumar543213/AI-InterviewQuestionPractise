@@ -15,7 +15,7 @@ def authenticate_and_get_user_details(request):
             request,
             AuthenticateRequestOptions(
                 authorized_parties=["https://ai-interview-question-practise-bz9f.vercel.app", "https://ai-interview-question-practise.vercel.app"],
-                jwt_key = os.getenv("JWT_KEY").replace("\\n", "\n")
+                jwt_key = os.getenv("JWT_KEY")
             )
         )
         if not request_state.is_signed_in:
