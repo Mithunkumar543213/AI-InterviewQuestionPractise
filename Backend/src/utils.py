@@ -14,7 +14,7 @@ def authenticate_and_get_user_details(request):
         request_state = clerk_sdk.authenticate_request(
             request,
             AuthenticateRequestOptions(
-                authorized_parties=["http://localhost:5173", "http://localhost:5174"],
+                authorized_parties=["http://localhost:5173", "https://ai-interview-question-practise.vercel.app"],
                 jwt_key = os.getenv("JWT_KEY").replace("\\n", "\n")
             )
         )
