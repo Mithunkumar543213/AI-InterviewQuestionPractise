@@ -161,7 +161,7 @@ async def get_quota(request: Request, db: Session = Depends(get_db)):
     return quota
 
 @router.get("/clear-quota")
-async def clear-quota(request: Request, db: Session = Depends(get_db)):
+async def clear_quota(request: Request, db: Session = Depends(get_db)):
     try:
         user_details = authenticate_and_get_user_details(request)
 
